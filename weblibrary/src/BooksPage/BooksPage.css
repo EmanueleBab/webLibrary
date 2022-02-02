@@ -1,0 +1,139 @@
+.booksPageHeader {
+    background-color: #E47911;
+    width: 100vw;
+    height: 60px;
+    overflow-x: hidden;
+}   
+
+
+.booksPageBody {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+
+.accountButton {
+    position: relative;
+    width: 200px;
+    height: 94%;
+    background-color: white;
+    border-color: black;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    float:right;
+    margin-right: 20px;
+    top:-35px;
+}
+
+.accountName {
+position: relative;
+top:20%;
+font-size:20px;
+float: right;
+text-align: center;
+width: 100%;
+overflow: hidden;
+}
+
+
+.booksPageText {
+    font-weight: 500;
+    font-size: 40px;
+    width: 100%;
+}
+
+.booksContainer {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.bookDisplayElement {
+    border-color: black;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: inline-block; 
+
+}
+
+.bookDisplayImage {
+    position: relative;
+    object-fit:cover;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+}
+
+.bookDisplayTitle {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500px;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    float: right;
+    
+}
+.bookDisplayRating {
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    float: right;    left: 0px;
+    bottom: 0px;
+    float:right;
+    text-align: center;
+
+}
+
+
+.searchBar {
+    position: relative;
+    width: 300px;
+    left: 40px;
+    top:10px;
+    height: 30px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+.searchBar::placeholder {
+    font-weight: 700;
+}
+
+.selector {
+    position: relative;
+    left:40px;
+    height: 34px;
+    top:10px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+.searchTypeSelector {
+    position: relative;
+    left:40px;
+    height: 34px;
+    top:10px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+
+.booksContainer {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+

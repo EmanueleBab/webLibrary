@@ -1,0 +1,207 @@
+.newBookPageBody {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.newBookPageHeader {
+    background-color: #E47911;
+    width: 100vw;
+    height: 60px;
+    overflow: hidden;
+}
+
+.NBInputBox {
+    position: relative;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    font-weight: 450;
+    left: 10px;
+    text-align: left;
+}
+
+.NBFormBackground {
+    position: relative;
+    width: 100%;
+    height: 2%;
+    top: 15px;
+    font-size: 16px;
+    opacity: 0.4;
+    font-weight: 700;
+    pointer-events: none;
+    transition: all 0.2s;
+    left: 10px;
+}
+
+.NBFormBackground[hovered='1'] {
+    top: 0px;
+    font-size: 16px;
+}
+
+.NBFormElement {
+    position: absolute;
+    margin-top: 20px;
+    height: 60px;
+    width: 440px;
+    max-width: 440px;
+    border: 1px solid black;
+    left: 20px;
+}
+
+.NBFormElement[correct='1'] {
+    border-color: green;
+}
+
+.NBFormElement[correct='-1'] {
+    border-color: red;
+}
+
+.newBookCategoryText {
+    position: absolute;
+    font-size: 30px;
+    top: 230px;
+    left: 20px;
+}
+
+.newBookCategoryText[correct='1'] {
+    color: green;
+}
+
+.newBookCategoryText[correct='-1'] {
+    color: red;
+}
+
+.newBookPageSelector {
+    position: absolute;
+    left: 280px;
+    height: 34px;
+    top: 240px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+.newBookHeaderText {
+    position: absolute;
+    font-size: 30px;
+    left: 350px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.newBookDescriptionText{
+    position: absolute;
+    margin-top: 30px;
+    font-size: 30px;
+    top: 300px;
+    left: 20px;
+}
+
+
+.newBookPageDescriptionBox {
+    position: absolute;
+    height: 660px;
+    width: 80vw;
+    border: 1px solid black;
+    left:20px;
+    top:400px;
+    text-align:left;
+}
+
+.newBookHomeButton {
+    position: relative;
+    background-color: orange;
+    width: 300px;
+    height: 60px;
+    left:20px;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.newBookFileUploader {
+    position: absolute;
+    top:1200px;
+    left: 450px;
+}
+
+
+.newBookFileUploaderImage {
+    position: absolute;
+    top:1100px;
+    left: 450px;
+}
+.newBookSubmitButton{
+    position: absolute;
+    background-color: orange;
+    width: 30vw;
+    height: 60px;
+    margin-top: 20px;
+    left:51vw;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    border-radius: 5px;
+    top:1150px
+
+}
+
+.NBuploadFileImage{ 
+    position: absolute;
+    top:1100px;
+    left: 20px;
+}
+
+.NBuploadFileText{ 
+    position: absolute;
+    top:1200px;
+    left: 20px;
+}
+
+
+.NBuploadFileImage[correct='1'] {
+    color: green;
+}
+
+.NBuploadFileImage[correct='-1'] {
+    color: red;
+}
+.NBuploadFileText[correct='1'] {
+    color: green;
+}
+
+.NBuploadFileText[correct='-1'] {
+    color: red;
+}
+
+
+@media screen and (max-height: 850px),screen and (max-width:1200px)  {
+    .newBookSubmitButton {
+        top: 1300px;
+        left:20px
+    }
+    .newBookHeaderText{
+        width: 0px;
+        overflow: hidden;
+    }
+    .NBFormElement{
+        width: 60vw;
+    }
+    .newBookFileUploaderImage {
+        left:20px;
+        top: 1150px;
+    }
+    .newBookFileUploader {
+        left:20px;
+        top: 1250px;
+    }
+  
+  
+    
+    
+}

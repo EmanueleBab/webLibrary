@@ -1,0 +1,282 @@
+.root {
+    overflow: hidden;
+}
+
+.MainPage {
+    overflow-x: hidden;
+}
+
+.logo {
+    position: absolute;
+    left: 5vw;
+    height: 100%;
+    margin-left: 0;
+}
+
+.App-header {
+    background-color: #E47911;
+    height: 7vh;
+    min-height: 40px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.mainPageFooter {
+    background-color: #E47911;
+    height: 16vh;
+    min-height: 40px;
+    width: 100vw;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    overflow: hidden;
+    left: 0px;
+    margin-bottom: 0vh;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+}
+
+.BooksBackground {
+    object-fit: cover;
+    margin-top: 0;
+    height: 100vh;
+    width: 100%;
+    min-height: 100px;
+    z-index: -1;
+    overflow: hidden;
+    max-width: 100vw;
+}
+
+.screenOpacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(83, 83, 83);
+    opacity: 0.3;
+    overflow: hidden;
+    max-width: 100vw;
+    /*animazione*/
+}
+
+.mainText {
+    position: absolute;
+    object-fit: cover;
+    width: 60vw;
+    height: 30vh;
+    max-height: 100vh;
+    top: 40vh;
+    color: white;
+    left: 20vw;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+.downArrowBackground {
+    background: lightgrey;
+    position: absolute;
+    left: 45vw;
+    bottom: 5vh;
+    opacity: 0.4;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    overflow: hidden;
+    /*animations section*/
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.downArrowBackground:hover {
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+
+.downArrowArrow {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    left: -5vw;
+    transform: translateY(1000px);
+    overflow: hidden;
+}
+
+.mainPageSpacer {
+    position: relative;
+    height: 10vh;
+    width: 100vw;
+    margin-top: 0;
+    max-width: 100%;
+    background-color: #EBECF0;
+}
+
+.infoSection {
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+.mainDontHaveAccountButton {
+    position: absolute;
+    background-color: orange;
+    width: 260px;
+    height: 60px;
+    top: 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    border-radius: 5px;
+    right: 270px;
+    bottom: 5px;
+}
+
+.mainHasAccountButton {
+    position: absolute;
+    background-color: orange;
+    width: 260px;
+    height: 60px;
+    top: 15px;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    border-radius: 5px;
+    right: 10px;
+    bottom: 5px;
+}
+
+.mainDontHaveAccountButtonBottom {
+    position: relative;
+    background-color: orange;
+    width: 250px;
+    height: 60px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    border-radius: 5px;
+    left: 32%;
+    bottom: 50px;
+}
+
+.mainHasAccountButtonBottom {
+    position: relative;
+    background-color: orange;
+    width: 250px;
+    height: 60px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    border-radius: 5px;
+    left: 32%;
+    bottom: 50px;
+}
+
+.mainPageBottomText {
+    position: relative;
+    font-size: 30px;
+    left: 35%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .screenOpacity {
+        animation: Background-Website-Start 1s linear;
+    }
+    .downArrowBackground {
+        animation: DownArrow-Website-Start 0.4s linear normal;
+    }
+    .downArrowArrow {
+        animation: DownArrowArrow-Website-Start 0.3s 0.2s linear normal forwards;
+    }
+}
+
+@keyframes Header-Website-Start {
+    from {
+        transform: translateY(-7vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes Background-Website-Start {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+    }
+}
+
+@keyframes DownArrow-Website-Start {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes DownArrowArrow-Website-Start {
+    from {
+        transform: translateY(90%);
+    }
+    to {
+        transform: translateY(-20%);
+    }
+}
+
+/*
+sezione grandezza testo relativa alla grandezza dello schermo 
+*/
+
+@media (min-width: 50px) {
+    .mainPageMiddleBar {
+        width: 0;
+        height: 0;
+    }
+    .mainText {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-height: 850px),screen and (max-width:1200px) {
+    .mainText {
+        font-size: 40px;
+    }
+    .mainDontHaveAccountButton {
+        width: 125px;
+        height: 60px;
+        right: 125px;
+        top: -20px;
+    }
+    .mainHasAccountButton {
+        width: 125px;
+        height: 60px;
+        top: -20px;
+        }
+    .logo {
+        width: 30vw;;
+    }
+
+    .mainPageBottomText {
+        left: 0;
+    }
+    .mainHasAccountButtonBottom{
+        left:15vw;
+    }
+    .mainDontHaveAccountButtonBottom {
+        left:15vw;
+
+    }
+}

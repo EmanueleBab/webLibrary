@@ -1,0 +1,124 @@
+.textContainer {
+    width: 100vw;
+    height: 45vh;
+    position: relative; 
+    background-color: #EBECF0;
+
+
+    max-width: 100%;
+}
+
+.textContainerText{
+    position: absolute;
+    font-weight: 700;
+    color:black;
+    overflow: hidden;
+    height: 100%;
+    object-fit:contain;
+
+}
+.textContainerText.Left {  
+    left:52vw;
+    max-width: 25vw;
+
+}
+
+.textContainerText.Right {  
+    left:20vw;
+    max-width: 25vw;
+    
+ }
+.textContainerImage { 
+    position: absolute;
+    top:0;
+    width: 40vw;
+    height: 36vh ;
+    max-width: 40vw;
+    object-fit:contain;
+    overflow:hidden;
+    
+} 
+
+.textContainerImage.Left {
+    left: -1vw;
+
+}
+
+.textContainerImage.Right {
+
+    right: -1vw;
+  
+}
+
+.spacer {
+    margin-top: 0vh;
+}
+
+
+@media (min-width: 50px) {
+    .textContainerText.Left {
+        font-size: 1.1rem;
+        left:10vw;
+        width: 80vw;
+        max-width: 80vw;
+        top:73vh;
+    }
+    .textContainerText.Right {
+        font-size: 1.1rem;
+        left:10vw;
+        width: 80vw;
+        max-width: 80vw;
+        top:73vh;
+    }
+    .textContainer {
+        height: 200vh;
+    }
+    .textContainerImage.Left { 
+        left:10vw;
+        right: auto ;
+        width: 80vw;
+        height: 72vh ;
+        max-width: 80vw;
+    }
+    .textContainerImage.Right{ 
+        left:10vw;
+        right: auto ;
+        width: 80vw;
+        height: 72vh ;
+        max-width: 80vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .textContainerText.Left {
+        font-size: 1rem;
+        left:52vw;
+        max-width: 25vw;
+        top:0;
+    }
+    .textContainerText.Right {
+        font-size: 1rem;
+        left:20vw;
+        max-width: 25vw;
+        top:0
+    }
+    .textContainerImage.Left { 
+        left:-1vw;
+        right: auto;
+        width: 40vw;
+        height: 36vh ;
+        max-width: 40vw;
+    }
+    .textContainerImage.Right { 
+        right: -1vw;
+        left: auto;
+
+        width: 40vw;
+        height: 36vh ;
+        max-width: 40vw;
+    }
+    .textContainer {
+        height: 45vh;
+    }
+}
+
